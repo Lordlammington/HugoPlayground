@@ -1,0 +1,33 @@
+<style>
+    @keyframes animatedBackground_c {
+        0% {-webkit-text-stroke-color: #ff573a}
+        10% {-webkit-text-stroke-color: #ffc13a}
+        20% {-webkit-text-stroke-color: #fff23a}
+        30% {-webkit-text-stroke-color: #A5FF3A}
+        40% {-webkit-text-stroke-color: #3AFF4E}
+        50% {-webkit-text-stroke-color: #3AFFAE}
+        60% {-webkit-text-stroke-color: #3AF3FF}
+        70% {-webkit-text-stroke-color: #3AA2FF}
+        80% {-webkit-text-stroke-color: #4B3AFF}
+        90% {-webkit-text-stroke-color: #B43AFF}
+        100% {-webkit-text-stroke-color: #FF3AEE}
+    }
+    
+    .rainbow {
+      background-image: -webkit-linear-gradient(right, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+        -webkit-animation: animatedBackground 5s linear infinite forwards;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #0000;
+        background-clip: text;
+    }
+    
+    @keyframes animatedBackground {
+        0% { background-position: 100% 0 }
+        100% { background-position: 500px 0 }
+    }
+</style>
+
+
+<b class="rainbow">
+    {{ .Inner }}
+</b>
